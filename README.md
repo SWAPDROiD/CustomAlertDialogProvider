@@ -3,7 +3,7 @@ You can use this project to show alert with good UI and animation from any where
 This project is in Kotlin.
 
 ### Use Below Code
-##### For Single Button
+#### For Single Button
 ```
 AwesomeAlertDialog.Builder(this)
                 .setTitle("Your Title!")
@@ -27,7 +27,7 @@ AwesomeAlertDialog.Builder(this)
                 .build()
 ```
 
-##### For Double Buttons
+#### For Double Buttons
 ```
 AwesomeAlertDialog.Builder(this)
                 .setTitle("Your Title!")
