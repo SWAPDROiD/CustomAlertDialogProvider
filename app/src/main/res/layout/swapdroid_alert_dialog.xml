@@ -6,12 +6,12 @@
     android:background="@android:color/transparent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        app:cardBackgroundColor="@android:color/white"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="16dp"
         app:cardUseCompatPadding="true">
@@ -38,6 +38,18 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_info_icon" />
+
+                <ImageView
+                    android:id="@+id/cancel_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="@dimen/space_20"
+                    android:paddingBottom="@dimen/space_20"
+                    android:paddingRight="@dimen/space_2"
+                    android:paddingTop="@dimen/space_2"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_x_mark_white" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -53,7 +65,7 @@
                     android:gravity="center"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
-                    android:text="Rate us if you like the app"
+                    android:text="@string/rate_us_if_you_like_the_app"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="18sp" />
@@ -67,7 +79,7 @@
                     android:gravity="center"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
-                    android:text="Do you really want to Exit ?"
+                    android:text="@string/do_you_really_want_to_exit"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -87,7 +99,9 @@
                         android:layout_weight="50"
                         android:background="@drawable/curved_shape_gray"
                         android:text="Rate"
-                        android:textColor="#ffffff" />
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="@dimen/space_4"
+                        android:layout_marginBottom="@dimen/space_4"/>
 
                     <Button
                         android:id="@+id/positiveBtn"
@@ -97,10 +111,12 @@
                         android:layout_weight="50"
                         android:background="@drawable/curved_shape_gray"
                         android:text="Ok"
-                        android:textColor="#ffffff" />
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="@dimen/space_4"
+                        android:layout_marginBottom="@dimen/space_4"/>
                 </LinearLayout>
             </RelativeLayout>
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

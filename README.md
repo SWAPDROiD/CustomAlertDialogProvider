@@ -5,7 +5,7 @@ This project is in Kotlin.
 ### Use Below Code
 #### For Single Button
 ```
-AwesomeAlertDialog.Builder(this)
+SwapdroidAlertDialog.Builder(this)
                 .setTitle("Your Title!")
                 .setMessage("Your Message!")
                 .isMessageVisible(true)
@@ -16,10 +16,10 @@ AwesomeAlertDialog.Builder(this)
                 .setPositiveBtnText("OK")
                 .isPositiveVisible(false)
                 .setNegativeBtnBackground(Color.parseColor(ColorConstant.NEGATIVE_COLOR)) 
-                .setAnimation(AwesomeAnimation.POP)
+                .setAnimation(SwapdroidAnimation.POP)
                 .isCancellable(false)
-                .setIcon(R.drawable.ic_info_icon, AwesomeIcon.Visible)  //ic_star_border_black_24dp
-                .OnNegativeClicked(object : AwesomeAlertDialogListener {
+                .setIcon(R.drawable.ic_info_icon, SwapdroidIcon.Visible)  //ic_star_border_black_24dp
+                .OnNegativeClicked(object : SwapdroidAlertDialogListener {
                     override fun OnClick() {
                         // do something
                     }
@@ -29,7 +29,7 @@ AwesomeAlertDialog.Builder(this)
 
 #### For Double Buttons
 ```
-AwesomeAlertDialog.Builder(this)
+SwapdroidAlertDialog.Builder(this)
                 .setTitle("Your Title!")
                 .setMessage("Your Message!")
                 .isMessageVisible(false)
@@ -40,20 +40,32 @@ AwesomeAlertDialog.Builder(this)
                 .setPositiveBtnText("YES")
                 .isPositiveVisible(true)
                 .setNegativeBtnBackground(Color.parseColor(ColorConstant.NEGATIVE_COLOR))  
-                .setAnimation(AwesomeAnimation.POP)
+                .setAnimation(SwapdroidAnimation.POP)
                 .isCancellable(false)
-                .setIcon(R.drawable.ic_info_icon, AwesomeIcon.Visible)  //ic_star_border_black_24dp
-                .OnPositiveClicked(object : AwesomeAlertDialogListener {
+                .setIcon(R.drawable.ic_info_icon, SwapdroidIcon.Visible)  //ic_star_border_black_24dp
+                .OnPositiveClicked(object : SwapdroidAlertDialogListener {
                     override fun OnClick() {
                         // do something
                     }
                 })
-                .OnNegativeClicked(object : AwesomeAlertDialogListener {
+                .OnNegativeClicked(object : SwapdroidAlertDialogListener {
                     override fun OnClick() {
                         // do something
                     }
                 })
                 .build()
+```
+
+#### For Progress Bar
+```
+SwapdroidProgressBar.showDialog(
+            this,
+            getString(R.string.in_progress),
+            false,
+            R.drawable.ic_info_icon
+        )
+        SwapdroidProgressBar.updateMessageAndProgress(getString(R.string.in_progress), 0)
+        
 ```
 
 ### Output :

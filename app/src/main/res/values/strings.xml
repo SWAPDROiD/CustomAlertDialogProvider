@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Custom Alert Dialog Provider</string>
+    <string name="app_name">Swapdroid Custom Dialog</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="progress_dialog">Progress Dialog</string>
+    <string name="infinite_progress_dialog">Only Progress Dialog</string>
+    <string name="rate_us_if_you_like_the_app">Rate us if you like the app</string>
+    <string name="do_you_really_want_to_exit">Do you really want to Exit ?</string>
+    <string name="in_progress">In Progress</string>
 </resources>

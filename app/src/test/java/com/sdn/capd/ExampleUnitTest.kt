@@ -1,4 +1,4 @@
-package com.swapnilnandapure.cadp
+package com.sdn.capd
 
 import org.junit.Test
 

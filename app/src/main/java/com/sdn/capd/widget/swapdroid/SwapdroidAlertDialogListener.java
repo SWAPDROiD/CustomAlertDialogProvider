@@ -1,10 +1,10 @@
-package com.swapnilnandapure.cadp.widget
+package com.sdn.capd.widget.swapdroid;
 
 /**
  * Created by Swapnil Nandapure
  * This interface is use to perform listeners for custom Alert Dialog
  */
 
-interface AwesomeAlertDialogListener {
-    fun OnClick()
+public interface SwapdroidAlertDialogListener {
+    void OnClick();
 }
