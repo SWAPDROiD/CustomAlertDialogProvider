@@ -1,5 +1,5 @@
 ## Custom Alert Dialog Provider
-You can use this project to show alert with good UI and animation from any where without eriting repetative things.
+You can use this project to show alert with good full customizable UI and animation from any where without eriting repetative things.
 This project is in Kotlin.
 
 ### Use Below Code
